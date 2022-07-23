@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<link rel="stylesheet" href="assets/responsive.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap"/>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body >
+<nav class="menu">
+    <input id="menu__toggle" type="checkbox" class='menu__toggle' />
+    <label for="menu__toggle" class="menu__toggle-label">
+        <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+            <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+        </svg>
+        <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+        </svg>
+    </label>
+    <ol class='menu__content'>
+        <li class="menu-item"><a href="#0">Home</a></li>
+        <li class="menu-item"><a href="#0">About</a></li>
+        <li class="menu-item">
+            <a href="#0">Widgets</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="#0">Big Widgets</a></li>
+                <li class="menu-item"><a href="#0">Bigger Widgets</a></li>
+                <li class="menu-item"><a href="#0">Huge Widgets</a></li>
+            </ol>
+        </li>
+        <li class="menu-item">
+            <a href="#0">Kabobs</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="#0">Shishkabobs</a></li>
+                <li class="menu-item"><a href="#0">BBQ kabobs</a></li>
+                <li class="menu-item"><a href="#0">Summer kabobs</a></li>
+            </ol>
+        </li>
+        <li class="menu-item"><a href="#0">Contact</a></li>
+    </ol>
+</nav>
+    <img class="logo" src="https://imagenes.t13.cl/images/original/2020/01/1579551188-google-derechoalolvido-aepd-internet-privacidad-protecciondedatos-tecnologia10974975725146721706x960.jpg" alt="">
+    <br>
+    <img class="back-image" src="https://image.tmdb.org/t/p/original/6NFwGsK3yAYjDidHSVi47xDA9HB.jpg" alt="Home before dark">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">
+                CodingNepal
+            </div>
+            <div class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Feedback</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="col-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://eloutput.com/app/uploads-eloutput.com/2020/08/eternals-nuevo-logo.jpg?x=480&quality=20" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="slider" style="width: 100%; height: auto">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="https://www.kindpng.com/picc/m/755-7553477_eternals-marvel-studios-eternals-logo-hd-png-download.png" height="auto" width="10%" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img.europapress.es/fotoweb/fotonoticia_20211105182459_420.jpg" class="img-fluid" alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, natus?
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, natus?
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, natus?
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, natus?
+                    </div>
+                </div>
+        </div>
+
+                <div class="card">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, natus?
+                </div>
+
+            </div>
+
+
+
+            <div class="col-3">
+
+                <p style="width: 100%; height: auto">Eternals</p>
+            </div>
+            <div class="col-1">
+                <p style="font-max-size: large; font-size: 100%">Sara Hellenn</p>
+            </div>
+            <div class="col-1">
+                <div class="card">
+                    <p>Sara Hellenn</p>
+                </div>
+
+            </div>
+            <div class="col-1">
+                <p>Sara Hellenn</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+<!-- belle/home2-default.html   11 Nov 2019 12:23:42 GMT -->
+</html>
